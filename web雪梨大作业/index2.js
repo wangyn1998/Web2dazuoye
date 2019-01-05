@@ -55,13 +55,16 @@ simg2.onmousemove = function(){
 //按钮改变图片
 var spanl = document.getElementById('spanl');
 var spanr = document.getElementById('spanr');
+var Bimg = document.getElementById("Bimg");
 spanr.onclick = function(){
 	ima.src = "img/pp1.jpeg";
+	Bimg.src = "img/pp1.jpeg";
 	simg2.style.border = '2px solid #ff9003';
 	simg1.style.border = 'none';
 }
 spanl.onclick = function(){
 	ima.src = "img/pp0.jpeg";
+	Bimg.src = "img/pp0.jpeg";
 	simg1.style.border = '2px solid #ff9003';
 	simg2.style.border = 'none';
 }
@@ -69,7 +72,6 @@ spanl.onclick = function(){
 var img1 = document.getElementById("img1");
 var img2 = document.getElementById("img2");
 var slider = document.getElementById("slider");
-var Bimg = document.getElementById("Bimg");
 var box = document.getElementById('box');
 img1.onmouseover = function () {
 	box.style.width = 816 + 'px';
